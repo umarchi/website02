@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trattoria Mare | ご予約受付</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav"><div class="logo">Trattoria Mare</div><a href="#reserve" class="cta">予約する</a></header>
+<section class="hero">
+<h1>海の幸を、シンプルに。</h1>
+<p>季節の魚介を使った本格イタリアン。駅徒歩3分。</p>
+</section>
+
+
+<section class="menu">
+<h2>おすすめ</h2>
+<ul>
+<li>前菜盛り合わせ</li>
+<li>渡り蟹のトマトクリームパスタ</li>
+<li>真鯛のアクアパッツァ</li>
+</ul>
+</section>
+
+
+<section id="reserve" class="reserve">
+<h2>オンライン予約</h2>
+<!-- Netlify Forms: data-netlify 属性で送信保存可 -->
+<form name="reservation" method="POST" data-netlify="true" action="/thanks.html">
+<input type="hidden" name="form-name" value="reservation">
+<label>お名前<input type="text" name="name" required></label>
+<label>メール<input type="email" name="email" required></label>
+<label>日付<input type="date" name="date" required></label>
+<label>人数<input type="number" name="people" min="1" max="10" required></label>
+<label>ご要望<textarea name="note" rows="3"></textarea></label>
+<button type="submit">予約する</button>
+</form>
+<p class="note">送信後、担当よりメールで確定のご連絡を差し上げます。</p>
+</section>
+
+
+<footer class="footer">© Trattoria Mare</footer>
+</body>
+</html>
