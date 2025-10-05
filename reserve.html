@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="nav wrap" role="navigation" aria-label="主ナビゲーション">
+    <a href="index.html" class="logo" aria-label="Bistro Lumière Home">Bistro Lumière</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="primary-nav" class="navlinks">
+      <a href="index.html">メイン</a>
+      <a href="guide.html">店舗案内</a>
+      <a href="concept.html">こだわり</a>
+      <a href="menu.html">メニュー</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero"><h1>オンライン予約</h1><p class="sub">空席を確認して仮予約（デモ）</p></section>
+
+<section class="section">
+  <div class="container">
+    <form id="reserveForm" novalidate>
+      <div class="form-grid">
+        <label>来店日<input type="date" name="date" required></label>
+        <label>時間<select name="time" required>
+          <option value="" disabled selected>選択</option>
+          <option>17:30</option><option>18:00</option><option>18:30</option>
+          <option>19:00</option><option>19:30</option><option>20:00</option>
+        </select></label>
+        <label>人数<select name="party" required>
+          <option value="2">2名</option><option value="3">3名</option><option value="4">4名</option>
+          <option value="5">5名</option><option value="6">6名</option>
+        </select></label>
+        <label>お名前<input type="text" name="name" required></label>
+        <label>電話番号<input type="tel" name="tel" required></label>
+        <label>メール<input type="email" name="email" required></label>
+      </div>
+      <label class="note-full"><textarea name="note" rows="3" placeholder="アレルギー／お祝いプレートなど"></textarea></label>
+      <button type="submit" class="btn">空席を確認して仮予約</button>
+      <p class="lead">※本予約システムはデモです。</p>
+      <div id="reserveMsg" class="msg" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">© Bistro Lumière</footer>
+<script src="main.js"></script>
+</body>
+</html>

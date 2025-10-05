@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>店舗案内 | Bistro Lumière</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bistro Lumière（ビストロ・ルミエール）の店舗案内。アクセス・営業時間・所在地情報。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="nav wrap" role="navigation" aria-label="主ナビゲーション">
+    <a href="index.html" class="logo" aria-label="Bistro Lumière Home">Bistro Lumière</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="primary-nav" class="navlinks">
+      <a href="index.html">メイン</a>
+      <a href="guide.html">店舗案内</a>
+      <a href="concept.html">こだわり</a>
+      <a href="menu.html">メニュー</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+</header>
+<!-- ===== 右下固定 予約ボタン ===== -->
+<a href="reserve.html" class="floating-cta" aria-label="予約ページへ">予約する</a>
+
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>店舗案内</h1>
+  <p class="sub">都心の喧騒から少し離れた、隠れ家のような小さなビストロ。</p>
+</section>
+
+<!-- ===== 店舗情報セクション ===== -->
+<section class="section container">
+  <div class="grid-2" style="align-items: flex-start;">
+    <!-- 店舗情報 -->
+    <div>
+      <h2>店舗情報</h2>
+      <p class="lead">Bistro Lumière（ビストロ・ルミエール）</p>
+      <ul style="list-style:none;padding:0;line-height:1.8;">
+        <li><strong>住所：</strong>〒150-0001 東京都渋谷区神宮前1-2-3 ルミエールビル1F</li>
+        <li><strong>アクセス：</strong>原宿駅より徒歩5分 / 明治神宮前駅より徒歩3分</li>
+        <li><strong>営業時間：</strong>ランチ 11:30〜15:00（L.O 14:00）<br>ディナー 17:30〜22:00（L.O 21:00）</li>
+        <li><strong>定休日：</strong>火曜日</li>
+        <li><strong>電話番号：</strong><a href="tel:0360000000" style="color:#8B1A2B;text-decoration:none;">03-6000-0000</a></li>
+        <li><strong>席数：</strong>カウンター6席／テーブル16席</li>
+      </ul>
+      <p class="note">※貸切・団体予約もご相談ください。</p>
+    </div>
+
+    <!-- Google Map埋め込み -->
+    <div style="border-radius:14px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.1);">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.899266208729!2d139.70355217567792!3d35.66424138019861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca81f79aab1%3A0x3bb02a2cb19f6a5f!2z5p2x5Lqs6YO96ZmF44CB44CSMTUwLTAwMDEg5p2x5Lqs6YO95riL6LC35Yy65aSn5ZCN5Y-w77yR5LiB55uu77yS4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1705140495236!5m2!1sja!2sjp"
+        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  © Bistro Lumière
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

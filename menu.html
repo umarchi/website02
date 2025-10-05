@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>メニュー | Bistro Lumière</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bistro Lumièreのメニュー。旬のアラカルト、コース、デザート、ドリンクまでご紹介。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ▼▼▼ 画像を正方形にする指定 ▼▼▼ */
+    .card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;      /* 正方形比率 */
+      object-fit: cover;        /* 中央トリミングで美しく表示 */
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="nav wrap" role="navigation" aria-label="主ナビゲーション">
+    <a href="index.html" class="logo" aria-label="Bistro Lumière Home">Bistro Lumière</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="navlinks">
+      <a href="index.html">メイン</a>
+      <a href="guide.html">店舗案内</a>
+      <a href="concept.html">こだわり</a>
+      <a href="menu.html" aria-current="page">メニュー</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 右下固定 予約ボタン ===== -->
+<a href="reserve.html" class="floating-cta" aria-label="予約ページへ">予約する</a>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>メニュー</h1>
+  <p class="sub">季節により内容が変更となる場合がございます。</p>
+</section>
+
+<!-- ===== コースメニュー ===== -->
+<section class="section container">
+  <h2 class="script">Cours Spéciaux</h2>
+  <div class="grid-3">
+    <article class="card"><div class="card-body">
+      <h3><span class="course-name">Argent</span>アルジャン   ¥4,800</h3>
+      <p>・前菜<br>・魚料理<br>・肉料理<br>・デザート<br>・カフェ<br>
+      初めての方にもおすすめの定番コース。</p>
+    </div></article>
+
+    <article class="card"><div class="card-body">
+      <h3><span class="course-name">Or</span>オール   ¥6,800</h3>
+      <p>・アミューズ<br>・前菜<br>・魚料理<br>・肉料理<br>・デザート<br>・カフェ<br>
+      厳選食材を使用したバランスの良いコース。</p>
+    </div></article>
+
+    <article class="card"><div class="card-body">
+      <h3><span class="course-name">Platine</span> プラティーヌ   ¥9,800</h3>
+      <p>・アミューズ<br>・前菜2種<br>・魚料理<br>・肉料理<br>・デザート2種<br>・カフェ<br>
+      おすすめのスペシャルコース。</p>
+    </div></article>
+  </div>
+</section>
+
+<!-- ===== アラカルト ===== -->
+<section class="section container">
+  <h2 class="script">A la Carte</h2>
+  <div class="grid-3">
+    <article class="card"><img src="img/tai.jpg" alt="真鯛のポワレ"><div class="card-body"><h3>真鯛のポワレ</h3><p>¥2,180</p></div></article>
+    <article class="card"><img src="img/appetizer.jpg" alt="季節の前菜盛り合わせ"><div class="card-body"><h3>季節の前菜盛り合わせ</h3><p>¥1,280</p></div></article>
+    <article class="card"><img src="img/kamo.jpg" alt="鴨のロースト"><div class="card-body"><h3>鴨のロースト</h3><p>¥2,380</p></div></article>
+    <article class="card"><img src="img/mussel.jpg" alt="ムール貝の白ワイン蒸し"><div class="card-body"><h3>ムール貝の白ワイン蒸し</h3><p>¥1,980</p></div></article>
+    <article class="card"><img src="img/veg.jpg" alt="旬野菜のグリル"><div class="card-body"><h3>旬野菜のグリル</h3><p>¥1,280</p></div></article>
+    <article class="card"><img src="img/pate.jpg" alt="パテ・ド・カンパーニュ"><div class="card-body"><h3>自家製パテ・ド・カンパーニュ</h3><p>¥1,580</p></div></article>
+    <article class="card"><img src="img/onion.jpg" alt="フレンチオニオンスープ"><div class="card-body"><h3>フレンチオニオンスープ</h3><p>¥1,180</p></div></article>
+  </div>
+</section>
+
+<!-- ===== メイン ===== -->
+<section class="section container">
+  <h2 class="script">Plats Principaux</h2>
+  <div class="grid-2">
+    <article class="card"><img src="img/steak.jpg" alt="国産牛フィレ肉のステーキ"><div class="card-body"><h3>国産牛フィレ肉のステーキ</h3><p>¥3,480</p></div></article>
+    <article class="card"><img src="img/chicken.jpg" alt="鶏モモのコンフィ"><div class="card-body"><h3>鶏モモのコンフィ（ハラール対応）</h3><p>¥2,980</p></div></article>
+    <article class="card"><img src="img/roti.jpg" alt="鴨胸肉のロティ"><div class="card-body"><h3>鴨胸肉のロティ ベリーソース</h3><p>¥3,280</p></div></article>
+    <article class="card"><img src="img/bouillabaisse.jpg" alt="ブイヤベース"><div class="card-body"><h3>旬魚のブイヤベース</h3><p>¥2,880</p></div></article>
+  </div>
+</section>
+
+<!-- ===== デザート ===== -->
+<section class="section container dessert-section">
+  <h2 class="script">Desserts</h2>
+  <div class="dessert-list">
+    <article class="dessert-item">
+      <img src="img/brulee.jpg" alt="クレームブリュレ">
+      <div class="dessert-body">
+        <h3>クレームブリュレ</h3>
+        <p>¥780 — カソナードを香ばしくキャラメリゼしたフランス伝統デザート。  
+        濃厚なカスタードとパリッとした食感が魅力です。</p>
+      </div>
+    </article>
+
+    <article class="dessert-item">
+      <img src="img/chocolat.jpg" alt="ガトーショコラ">
+      <div class="dessert-body">
+        <h3>ガトーショコラ</h3>
+        <p>¥820 — カカオ70%のビターチョコを贅沢に使用。  
+        温かい状態でも冷やしても濃厚な余韻を楽しめます。</p>
+      </div>
+    </article>
+
+    <article class="dessert-item">
+      <img src="img/macaron.jpg" alt="マカロン">
+      <div class="dessert-body">
+        <h3>マカロン</h3>
+        <p>¥980 — 外はさっくり、中はしっとり。
+            フランス伝統の技で焼き上げた香り高いマカロン。
+            優雅な午後のティータイムにもぴったりの一皿。</p>
+      </div>
+    </article>
+
+    <article class="dessert-item">
+     <img src="img/sorbet.jpg" alt="季節のシャーベット">
+      <div class="dessert-body">
+        <h3>季節のシャーベット</h3>
+        <p>¥680 — フルーツそのものの香りを閉じ込めた自家製シャーベット。  
+        季節ごとに内容が変わります。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== ドリンク ===== -->
+<section class="section container">
+  <h2 class="script">Boissons</h2>
+  <div class="grid-2">
+    <div>
+      <h3>ソフトドリンク</h3>
+      <ul>
+        <li>自家製ジンジャーエール　¥580</li>
+        <li>オレンジジュース　¥480</li>
+        <li>ウーロン茶　¥480</li>
+        <li>ペリエ（炭酸水）¥580</li>
+      </ul>
+      <h3>コーヒー・紅茶</h3>
+      <ul>
+        <li>ブレンドコーヒー　¥480</li>
+        <li>カフェオレ　¥520</li>
+        <li>アールグレイティー　¥480</li>
+        <li>ハーブティー（カモミール・ミント）¥520</li>
+      </ul>
+    </div>
+    <div>
+      <h3>アルコール</h3>
+      <ul>
+        <li>グラスワイン（赤・白）　¥780〜</li>
+        <li>ボトルワイン（赤・白）　¥3,800〜</li>
+        <li>クラフトビール　¥850</li>
+        <li>スパークリングワイン　¥950</li>
+        <li>カクテル各種　¥780〜</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== フッター ===== -->
+<footer class="footer">© Bistro Lumière</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

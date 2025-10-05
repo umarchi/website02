@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>採用情報 | Bistro Lumière</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bistro Lumièreの採用情報。食と人を愛し、誠実に働く仲間を募集しています。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ===== Recruit 専用スタイル ===== */
+    .recruit-hero {
+      padding: 80px 20px 60px;
+      text-align: center;
+      background: linear-gradient(180deg, #fff8f7, #FCF7F6);
+    }
+    .recruit-hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-family: 'Great Vibes', cursive;
+      color: var(--wine);
+      margin-bottom: 12px;
+    }
+    .recruit-hero p.sub {
+      font-size: 18px;
+      color: #5c141b;
+      margin: 0 auto;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    .recruit-message {
+      text-align: center;
+      margin: 60px auto;
+      max-width: 800px;
+      line-height: 1.9;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .recruit-message strong {
+      color: var(--wine);
+      font-weight: 600;
+    }
+
+    .job-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .job {
+      border: 1px solid #eadada;
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .job:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+    }
+
+    .job h3 {
+      color: var(--wine);
+      font-size: 20px;
+      margin-bottom: 8px;
+      border-left: 4px solid var(--gold);
+      padding-left: 10px;
+    }
+
+    .job p {
+      margin: 0;
+      color: #444;
+    }
+
+    .recruit-contact {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .recruit-contact a {
+      color: var(--wine);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .recruit-contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="nav wrap" role="navigation" aria-label="主ナビゲーション">
+    <a href="index.html" class="logo" aria-label="Bistro Lumière Home">Bistro Lumière</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="navlinks">
+      <a href="index.html">メイン</a>
+      <a href="guide.html">店舗案内</a>
+      <a href="concept.html">こだわり</a>
+      <a href="menu.html">メニュー</a>
+      <a href="recruit.html" aria-current="page">採用情報</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="recruit-hero">
+  <h1>Recrutement</h1>
+  <p class="sub">Bistro Lumièreは、食を通じて人を笑顔にする場所。  
+  私たちと一緒に、心に灯る時間をつくりませんか。</p>
+</section>
+
+<!-- ===== メッセージ ===== -->
+<section class="recruit-message container">
+  <p>小さなビストロだからこそ、<strong>一人ひとりの手仕事</strong>が  
+  お店の味と空気をつくります。<br>
+  経験よりも、<strong>料理やサービスを愛する気持ち</strong>を大切にしています。<br><br>
+  お客様との距離が近く、季節の素材に触れながら、  
+  自分の感性を磨ける環境です。<br>
+  <strong>真面目に、そして楽しむことを忘れずに。</strong>  
+  そんな仲間をお待ちしています。</p>
+</section>
+
+<!-- ===== 募集職種 ===== -->
+<section class="section container">
+  <h2 class="script">Postes Ouverts</h2>
+  <div class="job-list">
+    <div class="job">
+      <h3>キッチンスタッフ（正社員）</h3>
+      <p>・月給25万円〜<br>・週休2日制<br>・経験者優遇</p>
+      <p>季節のコース・仕込み全般を担当。<br>経験を活かしつつ新しい提案も歓迎。</p>
+    </div>
+    <div class="job">
+      <h3>ホールスタッフ（アルバイト）</h3>
+      <p>・時給1,200円〜<br>・週2日・1日4h〜</p>
+      <p>お客様との会話を楽しみながら、<br>温かいサービスを提供するお仕事です。</p>
+    </div>
+    <div class="job">
+      <h3>ソムリエ（正社員）</h3>
+      <p>・月給28万円〜<br>・資格手当あり</p>
+      <p>ナチュラルワインを中心に、料理に寄り添うペアリングを提案していただきます。</p>
+    </div>
+  </div>
+
+  <div class="recruit-contact">
+    <p>応募方法：履歴書（PDF可）を <a href="mailto:info@example.com">info@example.com</a> までお送りください。<br>
+    書類選考のうえ、面接日程をご連絡いたします。</p>
+  </div>
+</section>
+
+<!-- ===== フッター ===== -->
+<footer class="footer">© Bistro Lumière</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

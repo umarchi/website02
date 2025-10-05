@@ -1,45 +1,79 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Trattoria Mare | ご予約受付</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <title>Bistro Lumière | 季節の一皿と自然派ワイン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="都心の小さなビストロ。季節のコースと自然派ワイン。オンライン予約可。">
 </head>
 <body>
-<header class="nav"><div class="logo">Trattoria Mare</div><a href="#reserve" class="cta">予約する</a></header>
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="nav wrap" role="navigation" aria-label="主ナビゲーション">
+    <a href="index.html" class="logo" aria-label="Bistro Lumière Home">Bistro Lumière</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="primary-nav" class="navlinks">
+      <a href="index.html">メイン</a>
+      <a href="guide.html">店舗案内</a>
+      <a href="concept.html">こだわり</a>
+      <a href="menu.html">メニュー</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+</header>
+<!-- ===== 右下固定 予約ボタン ===== -->
+<a href="reserve.html" class="floating-cta" aria-label="予約ページへ">予約する</a>
+
+
+
 <section class="hero">
-<h1>海の幸を、シンプルに。</h1>
-<p>季節の魚介を使った本格イタリアン。駅徒歩3分。</p>
+  <h1>季節の一皿と自然派ワイン。<br>街角の小さなビストロ。</h1>
+  <p class="sub">旬の素材をシンプルに。ディナーはコース中心、ランチは3種のプレート。</p>
+  <a class="btn" href="reserve.html">空席を検索する</a>
+
+  <!-- スライダー本体 -->
+  <div class="hero-slider" aria-label="メニュー写真スライダー" aria-live="polite">
+    <div class="slides">
+    <img src="img/tai.jpg" alt="真鯛のポワレ" class="active">
+    <img src="img/appetizer.jpg" alt="季節の前菜盛り合わせ">
+    <img src="img/kamo.jpg" alt="鴨のロースト">
+    <img src="img/mussel.jpg" alt="ムール貝の白ワイン蒸し">
+    <img src="img/veg.jpg" alt="旬野菜のグリル">
+    <img src="img/pate.jpg" alt="パテ・ド・カンパーニュ">
+    <img src="img/onion.jpg" alt="オニオンスープ">
+    <img src="img/steak.jpg" alt="フィレのステーキ">
+    <img src="img/chicken.jpg" alt="鶏もものコンフィ">
+    <img src="img/roti.jpg" alt="鴨胸のロティ">
+    <img src="img/bouillabaisse.jpg" alt="ブイヤベース">
+ </div>
+
+    <!-- 矢印ナビ -->
+    <button class="arrow prev" aria-label="前の画像">&#10094;</button>
+    <button class="arrow next" aria-label="次の画像">&#10095;</button>
+
+    <!-- ドット -->
+    <div class="hero-dots" role="tablist" aria-label="スライド切替"></div>
+  </div>
 </section>
 
 
-<section class="menu">
-<h2>おすすめ</h2>
-<ul>
-<li>前菜盛り合わせ</li>
-<li>渡り蟹のトマトクリームパスタ</li>
-<li>真鯛のアクアパッツァ</li>
-</ul>
+
+<section class="section container">
+  <h2>お知らせ</h2>
+  <div class="card">
+    <div class="card-body">
+      週末限定コースをはじめました。季節の前菜と真鯛のポワレ、牛ほほ赤ワイン煮の3品。
+    </div>
+  </div>
 </section>
-
-
-<section id="reserve" class="reserve">
-<h2>オンライン予約</h2>
-<!-- Netlify Forms: data-netlify 属性で送信保存可 -->
-<form name="reservation" method="POST" data-netlify="true" action="/thanks.html">
-<input type="hidden" name="form-name" value="reservation">
-<label>お名前<input type="text" name="name" required></label>
-<label>メール<input type="email" name="email" required></label>
-<label>日付<input type="date" name="date" required></label>
-<label>人数<input type="number" name="people" min="1" max="10" required></label>
-<label>ご要望<textarea name="note" rows="3"></textarea></label>
-<button type="submit">予約する</button>
-</form>
-<p class="note">送信後、担当よりメールで確定のご連絡を差し上げます。</p>
-</section>
-
-
-<footer class="footer">© Trattoria Mare</footer>
+<footer class="footer">© Bistro Lumière</footer>
+<script src="main.js"></script>
 </body>
 </html>
